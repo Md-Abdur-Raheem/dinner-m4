@@ -1,0 +1,261 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Permanent+Marker&family=Roboto&display=swap');
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.header-container {
+    background-color: #e7272d;
+}
+
+.nav-icon img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.nav-icon {
+
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    width: fit-content;
+}
+
+.nav-icon span:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.nav-button {
+    width: fit-content;
+}
+
+.nav-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-button-icon i {
+    color: white;
+    width: fit-content;
+}
+
+.nav-menu {
+    position: absolute;
+    left: 60%;
+}
+
+.nav-menu-items {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 28px;
+    margin-right: 30px;
+}
+
+.nav-menu-items:hover {
+    color: #fbbe36;
+    border-bottom: 2px solid #fbbe36;
+}
+
+.buy-now-btn {
+    text-decoration: none;
+    color: #e7272d;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.buy-now-btn:hover span {
+    color: #fbbe36;
+    border-bottom: 2px solid #fbbe36;
+}
+
+/* Hero Styles */
+.hero {
+    display: flex;
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+
+.hero-description h3 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Barlow', sans-serif;
+    color: #fbbe36;
+}
+
+.hero-description h3:hover {
+    border-bottom: 2px solid #fbbe36;
+    width: fit-content;
+}
+
+.hero-description h1 {
+    font-size: 96px;
+    font-weight: 900;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    width: fit-content;
+}
+
+.hero-description h1:hover {
+    border-bottom: 10px solid white;
+    width: fit-content;
+}
+
+.hero-description p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.hero-description p:hover {
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.hero-image {
+    position: relative;
+    margin-left: 100px;
+    width: 100%;
+}
+
+.offer {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: -135px;
+}
+
+.pizza {
+    width: 500px;
+    position: relative;
+}
+
+.order-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border-radius: 50px;
+    background-color: #fbbe36;
+    padding: 20px 30px;
+}
+
+.order-btn i {
+    color: black;
+    margin-right: 15px;
+}
+
+.order-btn:hover span {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+/* Media Query */
+@media only screen and (max-width:575px) {
+    * {
+        width: 100%;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .hero-description h3 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-description h1 {
+        font-size: 50px;
+        font-weight: 900;
+        font-family: 'Barlow', sans-serif;
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-description p {
+        text-align: center;
+    }
+
+    .order-btn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        width: fit-content;
+
+    }
+
+    .order-btn span {
+        width: fit-content;
+        margin-left: 10px;
+    }
+
+    .order-btn i {
+        margin: 0;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 150px;
+    }
+
+    .pizza {
+        width: 97%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    * {
+        width: 100%;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .pizza {
+        width: 80%;
+    }
+
+    .order-btn i {
+        margin: 0;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+    }
+}
