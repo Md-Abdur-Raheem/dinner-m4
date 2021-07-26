@@ -454,12 +454,12 @@
 }
 
 .menu-title h2 {
+    display: inline;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     border-radius: 10px;
-    width: fit-content;
     background-color: #e7272d;
     padding: 6px 20px;
 }
@@ -468,6 +468,7 @@
     font-family: 'Barlow', sans-serif;
     font-size: 25px;
     font-weight: 900;
+    margin-top: 20px;
 }
 
 .menu-title h1 span {
@@ -476,6 +477,184 @@
 
 .menu-title p {
     color: #808080;
+}
+
+
+/* Deals Styles */
+.deals-title h3 {
+    text-align: center;
+    color: #e7272d;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.deals-title h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.deals-one h4 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+
+}
+
+.deals-one h5 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.deals-link {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.deals-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Rectangle Out */
+.hvr-rectangle-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-rectangle-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e7272d;
+    border-radius: 10px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-rectangle-out:hover,
+.hvr-rectangle-out:focus,
+.hvr-rectangle-out:active {
+    color: white;
+}
+
+.hvr-rectangle-out:hover:before,
+.hvr-rectangle-out:focus:before,
+.hvr-rectangle-out:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Parallax-Two Styles */
+.parallax-two {
+    background-image: url('/images/parallax.jpg');
+    background-repeat: no-repeat;
+    opacity: .90;
+    background-attachment: fixed;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-icon {
+    text-decoration: none;
+}
+
+.play-icon i {
+    color: #ff0008;
+    font-size: 100px;
+}
+
+/* Review Styles */
+.review-title h3 {
+    text-align: center;
+    color: #89b758;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.review-title h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.review p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #232323;
+    margin-left: 20px;
+    padding-right: 100px;
+    padding-top: 80px;
+}
+
+.review p small {
+    color: #808080;
+}
+
+
+/* Team Styles */
+.team {
+    background-color: #e7272d;
+}
+
+.team-title h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.team-title h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.team-card {
+    background-color: #fff4e2;
+    border-radius: 30px;
+}
+
+.social i {
+    font-size: 30px;
+    color: #fe7a15;
 }
 
 
@@ -635,8 +814,64 @@
     .menu-title h2 {
         margin-bottom: 10px;
         padding: 10px;
-        width: 100%;
         text-align: center;
+    }
+
+    .menu-title {
+        text-align: center;
+    }
+
+    .deals-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .deals-one {
+        margin-bottom: 10px;
+    }
+
+    .play-icon i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .review {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .review img {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .review p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -707,6 +942,50 @@
         text-align: center;
     }
 
+    .deals-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .deals-one {
+        margin-bottom: 10px;
+    }
+
+    .play-icon i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .review {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .review img {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .review p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 @media only screen and (min-width:993px) {
@@ -725,5 +1004,10 @@
     .ingredient-image {
         height: 100%;
     }
+
+    .menu-right-title {
+        text-align: right;
+    }
+
 
 }
