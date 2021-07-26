@@ -32,7 +32,7 @@
 
 .nav-icon span:hover {
     color: white;
-    border-bottom: 2px solid white;
+    text-decoration: underline;
 }
 
 .nav-button {
@@ -49,11 +49,6 @@
     width: fit-content;
 }
 
-.nav-menu {
-    position: absolute;
-    left: 60%;
-}
-
 .nav-menu-items {
     text-decoration: none;
     color: white;
@@ -66,7 +61,7 @@
 
 .nav-menu-items:hover {
     color: #fbbe36;
-    border-bottom: 2px solid #fbbe36;
+    text-decoration: underline;
 }
 
 .buy-now-btn {
@@ -83,7 +78,7 @@
 
 .buy-now-btn:hover span {
     color: #fbbe36;
-    border-bottom: 1px solid #fbbe36;
+    text-decoration: underline;
     transition: color 1s ease 0s;
 }
 
@@ -106,8 +101,7 @@
 }
 
 .hero-description h3:hover {
-    border-bottom: 2px solid #fbbe36;
-    width: fit-content;
+    text-decoration: underline;
 }
 
 .hero-description h1 {
@@ -119,8 +113,7 @@
 }
 
 .hero-description h1:hover {
-    border-bottom: 10px solid white;
-    width: fit-content;
+    text-decoration: underline;
 }
 
 .hero-description p {
@@ -130,8 +123,7 @@
 }
 
 .hero-description p:hover {
-    border-bottom: 1px solid white;
-    width: fit-content;
+    text-decoration: underline;
 }
 
 .hero-image {
@@ -170,7 +162,7 @@
 
 .order-btn:hover span {
     color: black;
-    border-bottom: 1px solid black;
+    text-decoration: underline;
 }
 
 .order-btn:hover {
@@ -217,22 +209,14 @@
     transition: transform .65s ease 0s;
 }
 
-.sell-card:hover h4:hover {
-    border-bottom: 2px solid white;
-}
-
 .sell-card:hover p {
     color: white;
-}
-
-.sell-card:hover p:hover {
-    border-bottom: 2px solid white;
 }
 
 .sell-card:hover .sell-cart:hover {
     transform: scale(1.25);
     transition: transform 1s ease 0s;
-    color: #89b758;
+    color: #e7272d;
 }
 
 .sell-card h4 {
@@ -242,18 +226,10 @@
     font-weight: 900;
 }
 
-.sell-card h4:hover {
-    border-bottom: 2px solid black;
-}
-
 .sell-card p {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #808080;
-}
-
-.sell-card p:hover {
-    border-bottom: 2px solid #808080;
 }
 
 .sell-cart {
@@ -354,7 +330,6 @@
 .welcome-title p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    /* font-weight: 900; */
     color: #232323;
     letter-spacing: 0;
     margin-top: 30px;
@@ -363,7 +338,6 @@
 .welcome-title span p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    /* font-weight: 900; */
     color: #808080;
     letter-spacing: 0;
     margin-bottom: 50px;
@@ -375,7 +349,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 900;
-    /* border: 1px solid #e7272d ; */
     background-color: #e7272d;
     padding: 15px;
     border-radius: 50px;
@@ -437,6 +410,11 @@
 @media only screen and (max-width:575px) {
     * {
         width: 100%;
+    }
+
+    .buy-now-btn {
+        position: relative;
+        top: 10px;
     }
 
     .hero {
@@ -549,6 +527,11 @@
         width: 100%;
     }
 
+    .buy-now-btn {
+        position: relative;
+        top: 10px;
+    }
+
     .hero {
         flex-wrap: wrap;
         margin-top: 150px;
@@ -587,9 +570,7 @@
     }
 
     .welcome-title h1 {
-        /* text-align: center; */
         font-size: 65px;
-        /* display: block; */
     }
 
     .speical-icon {
@@ -607,4 +588,14 @@
         text-align: center;
     }
 
+}
+
+@media only screen and (min-width:993px) {
+    .logo {
+        margin-right: 30%;
+    }
+
+    .buy-now-btn {
+        padding: 7px;
+    }
 }
