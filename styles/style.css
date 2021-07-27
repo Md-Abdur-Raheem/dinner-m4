@@ -858,21 +858,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Query */
 @media only screen and (max-width:575px) {
     * {
@@ -1156,22 +1141,7 @@ footer {
         text-align: center;
     }
 
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -1347,7 +1317,7 @@ footer {
     }
 
     .buy-now-btn {
-        padding: 7px;
+        padding: 6px;
     }
 
     .ingredient {
