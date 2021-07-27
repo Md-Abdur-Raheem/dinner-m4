@@ -658,6 +658,48 @@
 }
 
 
+/* Message Styles */
+.message>h2 {
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+
+}
+
+.message-button {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #89b758;
+    border-radius: 50px;
+    border: 1px solid #89b758;
+    padding: 15px 30px;
+}
+
+.message-button:hover {
+    background-color: #294b05;
+    border: 1px solid #294b05;
+    transition: background-color 1s ease 0s, border 1s ease 0s;
+    /* transition: border 1s ease 0s; */
+
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 545px;
+    width: 580px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 545px;
+    width: 580px
+}
+
 
 
 
@@ -873,7 +915,38 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .message {
+        text-align: center;
+    }
+
+    .message-button {
+        width: fit-content;
+        text-align: center;
+    }
+
+    .mapouter {
+        width: fit-content;
+    }
+
+    .gmap_canvas {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width:576px) and (max-width:992px) {
@@ -983,6 +1056,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .message {
+        text-align: center;
+    }
+
+    .message-button {
+        width: fit-content;
+    }
+
+    .mapouter {
+        width: fit-content;
+    }
+
+    .gmap_canvas {
+        margin-top: 20px;
     }
 
 
