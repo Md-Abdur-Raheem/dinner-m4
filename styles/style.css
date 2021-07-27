@@ -760,6 +760,51 @@
     width: 580px
 }
 
+/* Download Styles */
+.download-description h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    color: #e7272d;
+}
+
+.download-description h1 {
+    color: #232323;
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.download-description p {
+    text-align: justify;
+    width: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.download-button button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #333333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.download-button button i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.download-image img {
+    max-width: 500px;
+}
+
+
 
 
 
@@ -989,6 +1034,37 @@
         width: 100%;
     }
 
+    .download {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .download-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .download-description p {
+        width: 100%;
+    }
+
+    .download-button {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .download-button button {
+        padding: 10px 15px;
+        display: block;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+
+
+
+
 
 
 
@@ -1124,6 +1200,37 @@
         margin-top: 20px;
     }
 
+    .download {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .download-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .download-description p {
+        width: 100%;
+    }
+
+    .download-button {
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .download-button button {
+        padding: 15px 30px;
+        margin-bottom: 10px;
+    }
+
+    .download-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
@@ -1146,6 +1253,20 @@
 
     .menu-right-title {
         text-align: right;
+    }
+
+    .download {
+        width: 100%;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .download-container {
+        width: 100%;
+    }
+
+    .download-description p {
+        width: 100%;
     }
 
 
