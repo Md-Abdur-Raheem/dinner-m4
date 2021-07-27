@@ -742,8 +742,6 @@
     background-color: #294b05;
     border: 1px solid #294b05;
     transition: background-color 1s ease 0s, border 1s ease 0s;
-    /* transition: border 1s ease 0s; */
-
 }
 
 .mapouter {
@@ -804,7 +802,58 @@
     max-width: 500px;
 }
 
+/* Footer Styles */
+footer {
+    background-color: #232323;
+    color: white;
+}
 
+.footer-icon-container img {
+    width: 140px;
+}
+
+.instagram-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.address h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.address p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.address p span {
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #FBBE36;
+}
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.about:hover {
+    color: #e7272d;
+}
+
+.footer-social-icon {
+    font-size: 30px;
+    border: 1px solid #e7272d;
+    border-radius: 50%;
+    background-color: #e7272d;
+    padding: 10px;
+}
 
 
 
@@ -1062,6 +1111,52 @@
         margin-bottom: 10px;
     }
 
+    .footer-icon-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .address-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .about-text-container {
+        flex-direction: column;
+    }
+
+    .about-icon-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-social-icon {
+        text-align: center;
+        width: fit-content;
+        margin: 10px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+
 
 
 
@@ -1229,6 +1324,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .about-icon-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-social-icon {
+        text-align: center;
+        width: fit-content;
+        margin: 10px;
     }
 
 
